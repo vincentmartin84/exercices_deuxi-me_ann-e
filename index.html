@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inscription formation</title>
+  </head>
+
+  <body>
+    <h1>Inscription à la formation DWWM</h1>
+    <form action="traitement.php" method="post">
+      <label for="nom">Nom : <input type="text" name="nom" /></label><br />
+      <label for="prenom">prénom : <input type="text" name="prenom" /></label
+      ><br />
+      <label for="date_naissance"
+        >Date de naissance : <input type="date" name="date_naissance" /></label
+      ><br />
+      <label for="sexe"
+        >Sexe : <input type="radio" name="sexe" value="Homme" /> Homme
+        <input type="radio" name="sexe" value="Femme" /> Femme</label
+      ><br />
+      <label
+        >Promotion :
+        <select name="promotion">
+          <option value="Prepa">Prepa</option>
+          <option value="DA1">DA1</option>
+          <option value="DA2">DA2</option>
+        </select> </label
+      ><br />
+      <label for="adresse">Adresse : <input type="text" name="adresse" /></label
+      ><br />
+      <label for="nationnalite"
+        >Nationalité : <input type="text" name="nationalite" /></label
+      ><br />
+      <label
+        >Domaine(s) d'activité : <br />
+        <input type="checkbox" name="medecine" value="1" /> médecine<br />
+        <input type="checkbox" name="communication" value="1" />
+        Communication<br />
+        <input type="checkbox" name="informatique" value="1" />
+        Informatique<br /> </label
+      ><br />
+      <label for="newsletter"
+        >Newsletter :
+        <input type="checkbox" name="newsletter" value="1" /></label
+      ><br />
+      <input type="submit" value="S'inscrire" />
+    </form>
+  </body>
+</html>
