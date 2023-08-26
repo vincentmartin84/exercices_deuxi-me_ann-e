@@ -1,0 +1,66 @@
+// exo_2 auto / moto 
+
+
+<MCD> 
+
+--entitées: 
+    - vehicule 
+    id ai int 
+    type varchar 
+    carburant varchar 
+    caracteristique varchar 
+    contrat varchar 
+
+
+    -client 
+    id ai int 
+    nom varchar 
+    prenom varchar 
+    mail varchar 
+    pwd varchar 
+
+
+--associations: 
+
+    -louer: 
+    client 0,n 
+    vehicule 0,n 
+
+    -achat: 
+    client 0,n 
+    vehicule 0,n 
+
+</MCD>
+
+
+
+<MLD> 
+
+        - vehicule 
+        id int ai pk  
+        type varchar(100)
+        carburant varchar(100) 
+        caracteristique varchar(100) 
+        contrat varchar(100)
+    
+    
+        -client 
+        id int ai pk 
+        nom varchar(500)
+        prenom varchar(500)
+        mail varchar(500)
+        pwd varchar(500)
+    
+    
+    - louer 
+    id int ai pk 
+    client int fk 
+    vehicule int fk 
+
+    -achat 
+    id int ai pk 
+    client int fk
+    vehicule int fk 
+    
+        
+    </MLD>
